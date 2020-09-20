@@ -6,7 +6,6 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import *
-import json
 
 app = Flask(__name__)
 # LINE BOT info
