@@ -1,0 +1,75 @@
+{
+    "type": "bubble",
+    "hero": {
+      "type": "image",
+      "url": "https://i.imgur.com/nBsbESn.png",
+      "size": "full",
+      "aspectRatio": "20:13",
+      "aspectMode": "cover"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Koios1143",
+          "size": "xl",
+          "weight": "bold",
+          "color": "#0099ff"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "來自台南的小小coder"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "baseline",
+          "contents": [
+            {
+              "type": "icon",
+              "url": "https://i.imgur.com/4G4LFjU.png"
+            },
+            {
+              "type": "text",
+              "text": "koios1143@scist.org"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "baseline",
+          "contents": [
+            {
+              "type": "icon",
+              "url": "https://i.imgur.com/gzfW90Q.png"
+            },
+            {
+              "type": "text",
+              "text": "https://koios1143.github.io"
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "uri",
+            "label": "Website",
+            "uri": "https://koios1143.github.io/about/"
+          }
+        }
+      ]
+    }
+  }
