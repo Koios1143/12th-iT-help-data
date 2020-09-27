@@ -1,0 +1,141 @@
+{
+    "type": "bubble",
+    "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/Ex3Opfo.png",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "action": {
+            "type": "uri",
+            "uri": "https://www.cwb.gov.tw/V8/C/W/County/index.html"
+        }
+    },
+    "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "text",
+                "text": "Brown Cafe",
+                "weight": "bold",
+                "size": "xl",
+                "align": "center"
+            },
+            {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "md",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "2020-09-27 06:00:00"
+                    }
+                ]
+            },
+            {
+                "type": "separator",
+                "margin": "md"
+            },
+            {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "spacer"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "天氣狀況",
+                                "color": "#0099FF",
+                                "weight": "bold"
+                            },
+                            {
+                                "type": "text",
+                                "text": "",
+                                "offsetEnd": "xxl",
+                                "weight": "bold"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "溫度狀況",
+                                "color": "#0099FF",
+                                "weight": "bold"
+                            },
+                            {
+                                "type": "text",
+                                "text": "",
+                                "weight": "bold",
+                                "offsetEnd": "xxl"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "降雨機率",
+                                "color": "#0099FF",
+                                "weight": "bold"
+                            },
+                            {
+                                "type": "text",
+                                "text": "",
+                                "offsetEnd": "xxl",
+                                "weight": "bold"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "舒適度",
+                                "color": "#0099FF",
+                                "weight": "bold"
+                            },
+                            {
+                                "type": "text",
+                                "text": "",
+                                "offsetEnd": "xxl",
+                                "weight": "bold"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+            {
+                "type": "button",
+                "style": "link",
+                "height": "sm",
+                "action": {
+                    "type": "uri",
+                    "label": "詳細內容",
+                    "uri": "https://www.cwb.gov.tw/V8/C/W/County/index.html"
+                }
+            }
+        ],
+        "flex": 0
+    }
+}
