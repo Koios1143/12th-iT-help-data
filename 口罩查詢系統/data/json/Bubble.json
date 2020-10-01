@@ -1,0 +1,109 @@
+{
+    "type": "bubble",
+    "hero": {
+      "type": "image",
+      "url": "https://i.imgur.com/ALgPB77.png",
+      "size": "full",
+      "aspectRatio": "2:1",
+      "aspectMode": "fit",
+      "backgroundColor": "#FFFF00"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "XX藥局",
+          "size": "xl",
+          "weight": "bold",
+          "align": "center"
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "電話"
+            },
+            {
+              "type": "text",
+              "text": "0"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "地址"
+            },
+            {
+              "type": "text",
+              "text": "0"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "成人口罩剩餘"
+            },
+            {
+              "type": "text",
+              "text": "0"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "兒童口罩剩餘"
+            },
+            {
+              "type": "text",
+              "text": "0"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "最後更新時間"
+            },
+            {
+              "type": "text",
+              "text": "0"
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "postback",
+            "label": "取得地圖資訊",
+            "data": "Get_Map{}",
+            "displayText": "取得地圖資訊"
+          }
+        }
+      ]
+    }
+}
