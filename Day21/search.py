@@ -14,7 +14,7 @@ def search(keyword):
         links.append(i.find('a').get('href'))
 
     for link in links:
-        movie = requests.get('https://www.imdb.com/'+link)
+        movie = requests.get('https://www.imdb.com'+link)
         if(r.status_code == requests.codes.ok):
             soup_movie = BeautifulSoup(movie.text, 'html.parser')
         # get ranking
@@ -50,6 +50,7 @@ def search(keyword):
         res['watch_time'] = watch_time
         res['movie_type'] = movie_type
         res['release_time'] = release_time
+        res['link'] = 'https://www.imdb.com'+link
         ret.append(res)
         print(res)
     return ret
