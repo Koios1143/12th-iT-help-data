@@ -1,0 +1,21 @@
+{
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "datetimepicker",
+            "label": "選擇查詢時間",
+            "data": "SelectTime",
+            "mode": "date",
+            "min": "2009-11-01"
+          },
+          "style": "primary",
+          "color": "#00ccff"
+        }
+      ]
+    }
+  }
