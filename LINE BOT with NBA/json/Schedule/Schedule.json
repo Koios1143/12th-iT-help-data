@@ -1,0 +1,106 @@
+{
+    "type": "bubble",
+    "size": "giga",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://tw.global.nba.com/media/img/teams/00/logos/LAL_logo.svg"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "separator",
+                  "margin": "xl",
+                  "color": "#ffffff"
+                },
+                {
+                  "type": "text",
+                  "text": "洛杉磯 湖人",
+                  "weight": "bold"
+                },
+                {
+                  "type": "text",
+                  "text": "西區聯盟中排名#1",
+                  "weight": "bold"
+                },
+                {
+                  "type": "text",
+                  "text": "總教練: Frank Vogel",
+                  "weight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "separator",
+          "margin": "md"
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "52 - 19",
+              "weight": "bold",
+              "align": "center",
+              "size": "xxl"
+            }
+          ]
+        },
+        {
+          "type": "separator",
+          "margin": "md"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "2020 年 10 月",
+              "weight": "bold",
+              "align": "center"
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "日期",
+                  "align": "center"
+                },
+                {
+                  "type": "text",
+                  "text": "時間",
+                  "align": "center"
+                },
+                {
+                  "type": "text",
+                  "text": "對手",
+                  "align": "center"
+                },
+                {
+                  "type": "text",
+                  "text": "詳細資訊",
+                  "align": "center"
+                }
+              ]
+            }
+          ],
+          "margin": "xxl"
+        }
+      ]
+    }
+  }

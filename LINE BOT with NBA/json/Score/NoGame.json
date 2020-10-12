@@ -1,0 +1,42 @@
+{
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "本日無比賽",
+          "align": "center",
+          "weight": "bold",
+          "size": "xl"
+        },
+        {
+          "type": "text",
+          "text": "距離本日最近一場比賽時間為",
+          "align": "center"
+        },
+        {
+          "type": "text",
+          "text": "",
+          "align": "center"
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "postback",
+            "label": "查詢下一場",
+            "data": ""
+          },
+          "color": "#00ccff",
+          "style": "primary"
+        }
+      ]
+    }
+  }

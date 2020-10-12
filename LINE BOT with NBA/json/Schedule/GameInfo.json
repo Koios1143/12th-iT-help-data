@@ -1,0 +1,38 @@
+{
+"type": "box",
+"layout": "horizontal",
+"contents": [
+    {
+    "type": "text",
+    "text": "10/12",
+    "align": "center",
+    "gravity": "center"
+    },
+    {
+    "type": "text",
+    "text": "7:30",
+    "align": "center",
+    "gravity": "center"
+    },
+    {
+    "type": "text",
+    "text": "熱火",
+    "align": "center",
+    "gravity": "center"
+    },
+    {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+        {
+        "type": "button",
+        "action": {
+            "type": "postback",
+            "label": "More",
+            "data": "10/12"
+        }
+        }
+    ]
+    }
+]
+}

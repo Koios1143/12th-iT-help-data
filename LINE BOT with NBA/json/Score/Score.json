@@ -1,0 +1,22 @@
+{
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "",
+        "weight": "bold",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "",
+        "align": "center"
+      }
+    ]
+  }

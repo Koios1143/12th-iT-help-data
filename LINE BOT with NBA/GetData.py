@@ -27,7 +27,7 @@ def Get_Card(date):
     
     # No game this day
     if(NBA_date == None):
-        responce = json.load(open('json/NoGame.json','r',encoding='utf-8'))
+        responce = json.load(open('json/Score/NoGame.json','r',encoding='utf-8'))
         responce['body']['contents'][2]['text'] = str(nextAvailableDate)[:-6]
         responce['footer']['contents'][0]['action']['data'] = 'Get{}'.format(str(nextAvailableDate)[:-6])
         return responce
@@ -36,7 +36,7 @@ def Get_Card(date):
     NBA_games = NBA_date['games']
     Card = json.load(open('json/Card.json','r',encoding='utf-8'))
     for NBA_game in NBA_games:
-        bubble = json.load(open('json/Bubble.json','r',encoding='utf-8'))
+        bubble = json.load(open('json/Score/Bubble.json','r',encoding='utf-8'))
 
         # Get Game profile
         NBA_profile = NBA_game['profile']
@@ -85,7 +85,7 @@ def Get_Card(date):
 
         # Not yet started
         if(NBA_boxscore['status'] == '1'):
-            responce = json.load(open('json/NotYetStarted.json','r',encoding='utf-8'))
+            responce = json.load(open('json/Score/NotYetStarted.json','r',encoding='utf-8'))
             
             # Set HomeTeam responce
             responce['body']['contents'][0]['contents'][0]['contents'][1]['url'] = str(Home_logo_url)
@@ -177,7 +177,7 @@ def Get_Card(date):
 
         # Set Scores
         for i in range(4):
-            Score = json.load(open('json/Score.json','r',encoding='utf-8'))
+            Score = json.load(open('json/Score/Score.json','r',encoding='utf-8'))
             Score['contents'][0]['text'] = '第{}局'.format(i+1)
             Score['contents'][1]['text'] = str(Home_main_score[i])
             Score['contents'][2]['text'] = str(Away_main_score[i])
@@ -186,7 +186,7 @@ def Get_Card(date):
             if(Home_main_score[i] == 0 and Away_main_score[i] == 0):
                 break
             else:
-                Score = json.load(open('json/Score.json','r',encoding='utf-8'))
+                Score = json.load(open('json/Score/Score.json','r',encoding='utf-8'))
                 Score['contents'][0]['text'] = 'OT{}'.format(i-4)
                 Score['contents'][1]['text'] = str(Home_main_score[i])
                 Score['contents'][2]['text'] = str(Away_main_score[i])
@@ -214,17 +214,17 @@ def Get_Card(date):
 
         # Set URLs
         if(NBA_Live is not None):
-            Buttom = json.load(open('json/GameButtom.json','r',encoding='utf-8'))
+            Buttom = json.load(open('json/Score/GameButtom.json','r',encoding='utf-8'))
             Buttom['contents'][0]['action']['label'] = '收看直播'
             Buttom['contents'][0]['action']['uri'] = str(NBA_Live)
             bubble['footer']['contents'].append(Buttom)
         if(NBA_gameId is not None):
-            Buttom = json.load(open('json/GameButtom.json','r',encoding='utf-8'))
+            Buttom = json.load(open('json/Score/GameButtom.json','r',encoding='utf-8'))
             Buttom['contents'][0]['action']['label'] = '數據統計'
             Buttom['contents'][0]['action']['uri'] = 'https://tw.global.nba.com/boxscore/#!/{}'.format(NBA_gameId)
             bubble['footer']['contents'].append(Buttom)
         if(NBA_Hightlight is not None):
-            Buttom = json.load(open('json/GameButtom.json','r',encoding='utf-8'))
+            Buttom = json.load(open('json/Score/GameButtom.json','r',encoding='utf-8'))
             Buttom['contents'][0]['action']['label'] = 'Hightlights'
             Buttom['contents'][0]['action']['uri'] = str(NBA_Hightlight)
             bubble['footer']['contents'].append(Buttom)

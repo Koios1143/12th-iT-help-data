@@ -1,0 +1,181 @@
+{
+  "type": "bubble",
+  "size": "giga",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://tw.global.nba.com/media/img/teams/00/logos/LAL_logo.svg",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "湖人",
+                "align": "center",
+                "weight": "bold",
+                "size": "lg"
+              },
+              {
+                "type": "text",
+                "text": "52-19",
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "separator",
+                "margin": "xxl",
+                "color": "#ffffff"
+              },
+              {
+                "type": "text",
+                "text": "V.S.",
+                "offsetTop": "xxl",
+                "align": "center",
+                "weight": "bold",
+                "size": "xl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://tw.global.nba.com/media/img/teams/00/logos/MIA_logo.svg",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "熱火",
+                "align": "center",
+                "weight": "bold",
+                "size": "lg"
+              },
+              {
+                "type": "text",
+                "text": "44-29",
+                "align": "center"
+              }
+            ]
+          }
+        ],
+        "paddingEnd": "none",
+        "paddingTop": "xxl"
+      },
+      {
+        "type": "separator",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "勝",
+            "align": "center",
+            "weight": "bold",
+            "size": "lg"
+          },
+          {
+            "type": "text",
+            "text": "123 : 456",
+            "align": "center",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ],
+        "margin": "xxl"
+      },
+      {
+        "type": "separator",
+        "margin": "xxl"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "日期",
+                "weight": "bold",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "10/12",
+                "align": "center"
+              }
+            ],
+            "margin": "xxl"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "時間",
+                "weight": "bold",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "7:30",
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "地點",
+                "weight": "bold",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "AdventHealth Arena",
+                "align": "center"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "separator",
+        "margin": "md"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      
+    ]
+  }
+}

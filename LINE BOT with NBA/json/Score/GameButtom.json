@@ -1,0 +1,15 @@
+{
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "",
+          "uri": ""
+        },
+        "color": "#3366ff"
+      }
+    ]
+  }

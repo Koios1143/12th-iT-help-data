@@ -1,0 +1,29 @@
+{
+    "type": "bubble",
+    "size": "giga",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "東區 聯盟",
+          "weight": "bold",
+          "size": "xxl"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "東南組",
+              "align": "center",
+              "size": "xl",
+              "weight": "bold"
+            }
+          ]
+        }
+      ]
+    }
+  }

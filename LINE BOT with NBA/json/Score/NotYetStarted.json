@@ -1,0 +1,121 @@
+{
+    "type": "bubble",
+    "size": "giga",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "主隊",
+                  "weight": "bold",
+                  "align": "center"
+                },
+                {
+                  "type": "image",
+                  "url": "",
+                  "align": "center"
+                },
+                {
+                  "type": "text",
+                  "text": "",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "separator",
+                  "margin": "xxl",
+                  "color": "#ffffff"
+                },
+                {
+                  "type": "separator",
+                  "margin": "xxl",
+                  "color": "#ffffff"
+                },
+                {
+                  "type": "text",
+                  "text": "尚未開始",
+                  "offsetTop": "xxl",
+                  "align": "center",
+                  "weight": "bold",
+                  "size": "xl"
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "客隊",
+                      "align": "center",
+                      "weight": "bold"
+                    },
+                    {
+                      "type": "image",
+                      "url": "",
+                      "align": "center"
+                    },
+                    {
+                      "type": "text",
+                      "text": "",
+                      "align": "center"
+                    }
+                  ]
+                }
+              ],
+              "paddingEnd": "none",
+              "cornerRadius": "none"
+            }
+          ],
+          "paddingEnd": "none",
+          "cornerRadius": "none",
+          "paddingTop": "xxl"
+        },
+        {
+          "type": "separator",
+          "margin": "md"
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "horizontal",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "賽前分析",
+                "uri": ""
+              },
+              "color": "#3366ff",
+              "style": "link"
+            }
+          ]
+        }
+      ]
+    }
+  }

@@ -1,0 +1,9 @@
+{
+    "type": "button",
+    "action": {
+      "type": "uri",
+      "label": "收看直播",
+      "uri": "http://linecorp.com/"
+    },
+    "color": "#00ccff"
+}
