@@ -13,8 +13,8 @@ from GetAllSchedule import GetAllSchedule
 from GetDateSchedule import GetDateSchedule
 app = Flask(__name__)
 # LINE BOT info
-line_bot_api = LineBotApi('8jHkS1d2K0HdlD0LTrONdpuCqJt7TggKoCmSlT4MnbjtaDXt8AaFnX1+8yHjYbMBi4ApCQsWUDUsBJ/FoZihYxMIBQluYD6JLIaQpM0Ry8wumwUO7SddbN85qjG2/jBOEA8IsDrCDynoZK8FLhnCPwdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('90a595e280e821cf1b67d31c29f5deed')
+line_bot_api = LineBotApi('Channel Access Token')
+handler = WebhookHandler('Channel Secret')
 
 @app.route("/callback", methods=['POST'])
 def callback():
