@@ -1,0 +1,64 @@
+{
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "基本資料",
+        "weight": "bold",
+        "size": "lg",
+        "color": "#0033cc"
+      },
+      {
+        "type": "separator",
+        "margin": "sm",
+        "color": "#FFFFFF"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "身高/體重",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "1.96 公尺 / 95.3 公斤"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "選秀",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "2016 年"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "年資",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "3 年"
+          }
+        ]
+      }
+    ],
+    "margin": "xxl"
+}

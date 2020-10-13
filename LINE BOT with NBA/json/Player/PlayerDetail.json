@@ -1,0 +1,31 @@
+{
+    "type": "bubble",
+    "size": "giga",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "uri",
+            "label": "詳細資訊",
+            "uri": "https://tw.global.nba.com/players/#!/deandre'_bembry"
+          },
+          "style": "primary"
+        }
+      ]
+    },
+    "styles": {
+      "hero": {
+        "separator": false
+      }
+    }
+  }

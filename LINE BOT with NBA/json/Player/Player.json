@@ -1,0 +1,29 @@
+{
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "text",
+        "text": "DeAndre' Bembry",
+        "align": "center",
+        "size": "sm",
+        "gravity": "center"
+      },
+      {
+        "type": "text",
+        "text": "95",
+        "align": "center",
+        "size": "sm",
+        "gravity": "center"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "More",
+          "data": "hello"
+        }
+      }
+    ],
+    "margin": "md"
+}

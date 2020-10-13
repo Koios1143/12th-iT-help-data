@@ -1,0 +1,71 @@
+{
+    "type": "bubble",
+    "size": "giga",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://tw.global.nba.com/media/img/teams/00/logos/ATL_logo.svg"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "亞特蘭大 老鷹",
+                  "weight": "bold"
+                },
+                {
+                  "type": "text",
+                  "text": "東區聯盟中排名#14"
+                },
+                {
+                  "type": "text",
+                  "text": "20 勝 - 47 負"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "separator",
+          "margin": "md"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "姓名",
+                  "align": "center"
+                },
+                {
+                  "type": "text",
+                  "text": "背號",
+                  "align": "center"
+                },
+                {
+                  "type": "text",
+                  "text": "詳細資訊",
+                  "align": "center"
+                }
+              ]
+            }
+          ],
+          "margin": "xxl"
+        }
+      ]
+    }
+  }

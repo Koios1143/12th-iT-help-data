@@ -8,9 +8,11 @@ from linebot.exceptions import (
 )
 from linebot.models import *
 from GetData import Get_Card
-from GetTeam import GetTeam
+from GetTeam import GetTeam, GetTeam2
 from GetAllSchedule import GetAllSchedule
 from GetDateSchedule import GetDateSchedule
+from GetPlayers import GetPlayers
+from GetPlayer import GetPlayer
 app = Flask(__name__)
 # LINE BOT info
 line_bot_api = LineBotApi('Channel Access Token')
@@ -47,7 +49,8 @@ def handle_message(event):
             line_bot_api.reply_message(reply_token, FlexSendMessage('查詢結果出爐~',Card))
         elif(message == '球隊賽程'):
             line_bot_api.reply_message(reply_token, FlexSendMessage('請選擇球隊', GetTeam()))
-
+        elif(message == '球員數據'):
+            line_bot_api.reply_message(reply_token, FlexSendMessage('請選擇球隊', GetTeam2()))
 @handler.add(PostbackEvent)
 def handle_postback(event):
     reply_token = event.reply_token
@@ -60,8 +63,8 @@ def handle_postback(event):
         date = data[3:]
         Card = Get_Card(date)
         line_bot_api.reply_message(reply_token, FlexSendMessage('查詢結果出爐~', Card))
-    elif(data.startswith('Select')):
-        Team = data[7:]
+    elif(data.startswith('SelectScheduleFrom')):
+        Team = data.split()[1]
         Card = GetAllSchedule(Team)
         line_bot_api.reply_message(reply_token, FlexSendMessage('查詢結果出爐~', Card))
     elif(data.startswith('Schedule')):
@@ -69,6 +72,14 @@ def handle_postback(event):
         Team = data[1]
         Date = data[2]
         Card = GetDateSchedule(Team, Date)
+        line_bot_api.reply_message(reply_token, FlexSendMessage('查詢結果出爐~', Card))
+    elif(data.startswith('SelectPlayerFrom')):
+        Team = data.split()[1]
+        Card = GetPlayers(Team)
+        line_bot_api.reply_message(reply_token, FlexSendMessage('請選擇球員', Card))
+    elif(data.startswith('SelectPlayerName')):
+        PlayerName = data.split()[1]
+        Card = GetPlayer(PlayerName)
         line_bot_api.reply_message(reply_token, FlexSendMessage('查詢結果出爐~', Card))
 
 import os

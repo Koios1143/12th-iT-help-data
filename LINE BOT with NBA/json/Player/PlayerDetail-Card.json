@@ -1,0 +1,59 @@
+{
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627761.png",
+            "size": "full",
+            "aspectMode": "cover"
+          }
+        ],
+        "width": "70px"
+      },
+      {
+        "type": "separator",
+        "margin": "md",
+        "color": "#FFFFFF"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "DEANDRE'-BEMBRY",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "亞特蘭大 老鷹"
+          },
+          {
+            "type": "text",
+            "text": "後衛-前鋒"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "95",
+            "weight": "bold",
+            "align": "center",
+            "gravity": "center",
+            "size": "4xl",
+            "color": "#e6b800"
+          }
+        ],
+        "width": "70px"
+      }
+    ]
+}

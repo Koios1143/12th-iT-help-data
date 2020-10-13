@@ -1,0 +1,154 @@
+{
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "例行賽平均數據",
+        "color": "#0033cc",
+        "weight": "bold",
+        "size": "lg"
+      },
+      {
+        "type": "separator",
+        "margin": "sm",
+        "color": "#FFFFFF"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "比賽",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "43"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "先發",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "4"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "場均時間",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "21.3"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "投籃%",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "45.6%"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "三分球%",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "23.1%"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "罰球%",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "54.2%"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "平均籃板",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "3.5"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "平均助攻",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "1.9"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "平均得分",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "5.8"
+          }
+        ]
+      }
+    ],
+    "margin": "xxl"
+}
