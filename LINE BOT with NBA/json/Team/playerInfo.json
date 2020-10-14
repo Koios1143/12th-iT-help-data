@@ -1,0 +1,21 @@
+{
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+        {
+            "type": "text",
+            "text": "1",
+            "align": "center"
+        },
+        {
+            "type": "text",
+            "text": "TRAE-YOUNG",
+            "align": "center"
+        },
+        {
+            "type": "text",
+            "text": "29.6",
+            "align": "center"
+        }
+    ]
+}

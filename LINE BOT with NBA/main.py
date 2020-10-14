@@ -8,11 +8,13 @@ from linebot.exceptions import (
 )
 from linebot.models import *
 from GetData import Get_Card
-from GetTeam import GetTeam, GetTeam2
+from GetTeam import GetTeam, GetTeam2, GetTeam3
 from GetAllSchedule import GetAllSchedule
 from GetDateSchedule import GetDateSchedule
 from GetPlayers import GetPlayers
 from GetPlayer import GetPlayer
+from GetTeamLeaders import GetTeamLeaders
+
 app = Flask(__name__)
 # LINE BOT info
 line_bot_api = LineBotApi('Channel Access Token')
@@ -51,6 +53,9 @@ def handle_message(event):
             line_bot_api.reply_message(reply_token, FlexSendMessage('請選擇球隊', GetTeam()))
         elif(message == '球員數據'):
             line_bot_api.reply_message(reply_token, FlexSendMessage('請選擇球隊', GetTeam2()))
+        elif(message == '球隊數據排行'):
+            line_bot_api.reply_message(reply_token, FlexSendMessage('請選擇球隊', GetTeam3()))
+
 @handler.add(PostbackEvent)
 def handle_postback(event):
     reply_token = event.reply_token
@@ -81,7 +86,10 @@ def handle_postback(event):
         PlayerName = data.split()[1]
         Card = GetPlayer(PlayerName)
         line_bot_api.reply_message(reply_token, FlexSendMessage('查詢結果出爐~', Card))
-
+    elif(data.startswith('SelectLeaderFrom')):
+        Team = data.split()[1]
+        Card = GetTeamLeaders(Team)
+        line_bot_api.reply_message(reply_token, FlexSendMessage('查詢結果出爐~', Card))
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 80))

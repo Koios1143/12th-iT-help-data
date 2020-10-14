@@ -1,0 +1,55 @@
+{
+    "type": "bubble",
+    "size": "giga",
+    "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "平均得分",
+                        "weight": "bold",
+                        "size": "xxl"
+                    },
+                    {
+                        "type": "separator",
+                        "margin": "md"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "排名",
+                                "weight": "bold",
+                                "align": "center"
+                            },
+                            {
+                                "type": "text",
+                                "text": "姓名",
+                                "weight": "bold",
+                                "align": "center"
+                            },
+                            {
+                                "type": "text",
+                                "text": "成績",
+                                "align": "center",
+                                "weight": "bold"
+                            }
+                        ]
+                    }
+                ],
+                "margin": "xxl"
+            },
+            {
+                "type": "separator",
+                "margin": "md"
+            }
+        ]
+    }
+}
