@@ -14,7 +14,7 @@ def tz_from_utc_ms_ts(utc_ms_ts, tz_info):
     return utc_datetime.replace(tzinfo=pytz.timezone('UTC')).astimezone(tz_info)
 
 def Get_Card(date):
-    url = 'https://tw.global.nba.com/stats2/scores/daily.json?countryCode=TW&gameDate={}&locale=zh_TW&tz=%2B8'
+    url = 'https://tw.glob-prev3.nba.com/stats2/scores/daily.json?countryCode=TW&gameDate={}&locale=zh_TW&tz=%2B8'
     Data = requests.get(url.format(date))
     Data = json.loads(Data.text,encoding='utf-8')
 
@@ -54,7 +54,7 @@ def Get_Card(date):
         Home_division = Home_profile['division']
         Home_id = Home_profile['id']
         Home_abbr = Home_profile['abbr']
-        Home_logo_url = 'https://tw.global.nba.com/media/img/teams/00/logos/{}_logo.png'.format(Home_abbr)
+        Home_logo_url = 'https://tw.glob-prev3.nba.com/media/img/teams/00/logos/{}_logo.png'.format(Home_abbr)
 
         # AwayTeam - Profile
         Away_profile = NBA_awayTeam['profile']
@@ -63,7 +63,7 @@ def Get_Card(date):
         Away_division = Away_profile['division']
         Away_id = Away_profile['id']
         Away_abbr = Away_profile['abbr']
-        Away_logo_url = 'https://tw.global.nba.com/media/img/teams/00/logos/{}_logo.png'.format(Away_abbr)
+        Away_logo_url = 'https://tw.glob-prev3.nba.com/media/img/teams/00/logos/{}_logo.png'.format(Away_abbr)
 
         # HomeTeam - matchup
         Home_matchup = NBA_homeTeam['matchup']
@@ -96,7 +96,7 @@ def Get_Card(date):
             responce['body']['contents'][0]['contents'][2]['contents'][0]['contents'][2]['text'] = '{} - {}'.format(Away_wins, Away_losses)
             
             # Set URL
-            responce['footer']['contents'][0]['contents'][0]['action']['uri'] = 'https://tw.global.nba.com/preview/#!/'.format(NBA_gameId)
+            responce['footer']['contents'][0]['contents'][0]['action']['uri'] = 'https://tw.glob-prev3.nba.com/preview/#!/'.format(NBA_gameId)
 
             Card['contents'].append(responce)
             continue
@@ -221,7 +221,7 @@ def Get_Card(date):
         if(NBA_gameId is not None):
             Buttom = json.load(open('json/Score/GameButtom.json','r',encoding='utf-8'))
             Buttom['contents'][0]['action']['label'] = '數據統計'
-            Buttom['contents'][0]['action']['uri'] = 'https://tw.global.nba.com/boxscore/#!/{}'.format(NBA_gameId)
+            Buttom['contents'][0]['action']['uri'] = 'https://tw.glob-prev3.nba.com/boxscore/#!/{}'.format(NBA_gameId)
             bubble['footer']['contents'].append(Buttom)
         if(NBA_Hightlight is not None):
             Buttom = json.load(open('json/Score/GameButtom.json','r',encoding='utf-8'))
